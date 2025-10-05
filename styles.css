@@ -48,8 +48,7 @@ body{
 .card-body{
     position: absolute;
     color:white;
-    opacity: .7;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.7);
     width:26%;
     text-align: center;
     top: 8rem;
@@ -69,12 +68,14 @@ body{
 
 .logo-text{
     font-size: 1em;
+    color: white;
+    
 }
 .picture_src{
     
     position:absolute;
     /* top: 41rem; */
-    left: 6rem;
+    left: 10rem;
     display:flex;
     justify-content: center;
     font-size: .7rem;
@@ -98,18 +99,18 @@ body{
 }
 
 .heading{
-    flex-grow:2;
-    background-color: lightblue;
+    flex-grow:1;
+    background-color: rgb(231, 231, 231);
 }
 
 .form{
     flex-grow:1;
-    background-color: lightgreen;
+    background-color: white;
 }
 
 .footer{
     flex-grow:2;
-    background-color: lightpink;
+    background-color: rgb(231, 231, 231);
 }
 
 
@@ -140,6 +141,25 @@ body{
 }
 
 input{
-    border-radius: 3px;
+    border-radius: 5px;
     margin-bottom: 1rem;
+    border-color: #E5E7EB;
+}
+.submit-button{
+    background-color: #596D48;
+    border-radius: 6px;
+    color:white;
+    padding: 10px 32px;
+    margin-top: 2rem;
+    font-size: medium;
+    font-weight: bold;
+}
+
+input[type="password"]:invalid{
+    border-color:red;
+}
+
+input:focus{
+    border-color:blue;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.5);
 }
