@@ -18,6 +18,11 @@ body{
     height: 20%;
 }
 
+.heading, .form, .footer {
+    padding-left: 50px; /* Adjust as needed */
+    padding-right: 50px;
+}
+
 .background-img{
     width: 35vw;
     height: 100vh;
@@ -93,16 +98,48 @@ body{
 }
 
 .heading{
-    flex-grow:1;
+    flex-grow:2;
     background-color: lightblue;
 }
 
 .form{
-    flex-grow:3;
+    flex-grow:1;
     background-color: lightgreen;
 }
 
 .footer{
     flex-grow:2;
     background-color: lightpink;
+}
+
+
+.heading p{
+    padding-top: 5rem;
+    padding-right:55%;
+    /* padding-left: 2rem; */
+    font-weight: bold;
+}
+
+.form{
+    /* padding:1rem; */
+    display:flex;
+    flex-direction: column;
+}
+
+.fields{
+    display:flex;
+
+}
+
+.first-column-field, .second-column-field{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding-right: 2rem;
+    
+}
+
+input{
+    border-radius: 3px;
+    margin-bottom: 1rem;
 }
