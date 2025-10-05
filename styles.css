@@ -56,15 +56,25 @@ body{
 
 }
 
+.logo{
+    /* height: 100%; Make the logo take up the full height of the .card-body container */
+    
+    
+}
+
+.logo-text{
+    font-size: 1em;
+}
 .picture_src{
     
     position:absolute;
-    top: 41rem;
-    left: 5rem;
+    /* top: 41rem; */
+    left: 6rem;
     display:flex;
     justify-content: center;
     font-size: .7rem;
     color: white;
+    bottom:0;
 }
 
 .container{
